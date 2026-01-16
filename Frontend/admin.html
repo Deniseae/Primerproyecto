@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <h1>Panel Administrador</h1>
+    <p>Bienvenida admin</p>
+  </body>
+  <script>
+    const token = localStorage.getItem("token");
+    const rol = localStorage.getItem("rol");
+
+    if (!token || rol !== "admin") {
+      alert("Acceso denegado. Solo administradores.");
+      window.location.href = "login.html";
+    }
+  </script>
+</html>

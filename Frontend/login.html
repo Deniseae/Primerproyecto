@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- REGISTRO -->
+    <h3>Registrarse</h3>
+    <input type="email" id="regEmail" placeholder="Email" />
+    <input type="password" id="regPassword" placeholder="Contraseña" />
+    <select id="regRol">
+      <option value="user">Usuario</option>
+      <option value="admin">Administrador</option>
+    </select>
+    <button onclick="register()">Registrarse</button>
+
+    <hr />
+
+    <!-- LOGIN -->
+    <h3>Iniciar sesión</h3>
+    <input type="email" id="loginEmail" placeholder="Email" />
+    <input type="password" id="loginPassword" placeholder="Contraseña" />
+    <button onclick="login()">Iniciar sesión</button>
+
+    <p id="mensaje"></p>
+
+    <script src="login.js"></script>
+  </body>
+</html>
